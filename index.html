@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="./css/style.css">
+     
+</head>
+<body>
+<!-- ==================================================================================================
+                                   Header Section 
+================================================================================================== -->
+<header class="header">
+    <a href="/index.html" class="logo">Online Shop</a>
+    <nav class="navbar">
+        <div class="search-box">
+            <input type="text" name="search" id="search" placeholder="Search Your Products" onkeyup="search()" >
+            <i class="fas fa-search"></i>
+            <div class="search-result" id="search-result">
+                <!-- <div class="result-box">
+                    <div class="result-img">
+                        <img src="./images/p1.jpg"alt="">
+                    </div>
+                    <div class="result-content">
+                        <h4>name</h4>
+                        <p>Price:&#8377;799</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="nav-icons">
+            <div class="cart-icon">
+                <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <span id="quantity">0</span>
+            </div>
+            <i class="fas fa-user"></i>
+        </div>
+    </nav>
+</header>
+<!-- ==================================================================================================
+                                   Hero Section 
+================================================================================================== -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-box">
+            <div class="hero-content">
+                <h4>Nike Red Shoes</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et explicabo exercitationem amet perferendis, officia doloremque reprehenderit. Nesciunt iste in ex vel cupiditate nisi ut, fugiat sed ad. Fugit, ab sit!</p>
+                <button class="btn">Shop Now</button>
+            </div>
+            <div class="hero-img">
+                <img src="./images/home-shoe-1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="hero-container">
+        <div class="hero-box">
+            <div class="hero-content">
+                <h4>Nike Blue Shoes</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et explicabo exercitationem amet perferendis, officia doloremque reprehenderit. Nesciunt iste in ex vel cupiditate nisi ut, fugiat sed ad. Fugit, ab sit!</p>
+                <button class="btn">Shop Now</button>
+            </div>
+            <div class="hero-img">
+                <img src="./images/home-shoe-2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="hero-container">
+        <div class="hero-box">
+            <div class="hero-content">
+                <h4>Nike yellow Shoes</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et explicabo exercitationem amet perferendis, officia doloremque reprehenderit. Nesciunt iste in ex vel cupiditate nisi ut, fugiat sed ad. Fugit, ab sit!</p>
+                <button class="btn">Shop Now</button>
+            </div>
+            <div class="hero-img">
+                <img src="./images/home-shoe-3.png" alt="">
+            </div>
+        </div>
+    </div>
+            <div id="prev" class="fas fa-chevron-left" onclick="controller(-1)"></div>
+            <div id="next" class="fas fa-chevron-right"onclick="controller(1)"></div>
+</section>
+<!-- ==================================================================================================
+                                   Popular Products Section 
+================================================================================================== -->
+<section class="popular-product">
+    <h2 class="heading">Popular <span>Products</span></h2>
+    <div class="popular-container" id="popular-pd-container">
+        <!-- <div class="popular-pd-box">
+            <div class="popular-pd-img">
+                <div class="off">
+                    <span>20% 0ff</span>
+                </div>
+                <img src="./images/p1.jpg" alt="">
+            </div>
+            <div class="popular-pd-content">
+                <div class="popular-pd-text">
+                    <h3>product name</h3>
+                    <p>Price: &#8377; 799 <span>&#8377;999</span></p>
+                </div>
+                <div class="popular-pd-btn">Add To Cart</div>
+            </div>
+        </div> -->
+    </div>
+            <div id="prev" class="fas fa-chevron-left prev"></div>
+            <div id="next" class="fas fa-chevron-right next"></div>
+</section>
+
+<!-- ==================================================================================================
+                                   Latest Products Section 
+================================================================================================== -->
+<section class="latest-products">
+    <h2 class="heading">latest <span>products</span></h2>
+    <div class="latest-pr-container" id="latest-products">
+        <!-- <div class="latest-pr-box">
+            <div class="latest-pr-img">
+                <img src="./images/p9.jpg"alt="">
+            </div>
+            <div class="latest-pr-content">
+                <h3>product name</h3>
+                <p>Price: &#8377;799 <span>&#8377;999</span></p>
+                <button class="btn">Add To Cart</button>
+            </div>
+           
+        </div> -->
+    </div>
+</section>
+<!-- ==================================================================================================
+                                  Banner Section 
+================================================================================================== -->
+<section class="banner">
+    <h2 class="heading">shop buy <span>categories</span></h2>
+    <div class="banner-container">
+        <div class="banner-box">
+            <div class="banner-content">
+                <p>upto 20% off</p>
+                <h3>for boys</h3>
+                <button class="btn">Shop Now</button>
+            </div>
+            <div class="banner-img">
+                <img src="./images/banner1.jpg" alt="">
+            </div>
+        </div>
+        <div class="banner-box">
+            <div class="banner-content">
+                <p>upto 20% off</p>
+                <h3>for girls</h3>
+                <button class="btn">Shop Now</button>
+            </div>
+            <div class="banner-img">
+                <img src="./images/banner2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================================================================================================
+                                  footer Section 
+================================================================================================== -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-box">
+            <h4>About</h4>
+            <ul>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="./index.html">Home</a></li>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="#">About</a></li>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h4>Help</h4>
+            <ul>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="./index.html">Privacy Policy</a></li>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="#">My account</a></li>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="./cart.html">Cart</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h4>Have A Question?</h4>
+            <address>
+                    <p>
+                      <i class="fa-solid fa-location-dot"></i> Pilani Rajasthan
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-phone"></i> <a href="tel:+917689897722">+91 7689897722</a>
+                    </p>
+                    <p>
+                       <i class="fa-solid fa-envelope"></i> <a href="mailto:sadavarshsaini1@gmail.com">sadavarshsaini1@gmail.com</a>
+                    </p>
+            </address>
+        </div>
+    </div>
+    <div class="footer-cradit">
+        <p>Copyright@2021 | All Right Reserved </p>
+    </div>
+</footer>
+<script src="./js/products.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/home.js"></script>
+</body>
+</html>

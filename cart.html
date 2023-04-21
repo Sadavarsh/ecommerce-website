@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+     <!-- custom css link  -->
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+<!-- ==================================================================================================
+                                   Header Section 
+================================================================================================== -->
+<header class="header">
+    <a href="/index.html" class="logo">Online Shop</a>
+    <nav class="navbar">
+        <div class="search-box">
+            <input type="text" name="search" id="search" placeholder="Search Your Products" onkeyup="search()" >
+            <i class="fas fa-search"></i>
+            <div class="search-result" id="search-result">
+                <!-- <div class="result-box">
+                    <div class="result-img">
+                        <img src="./images/p1.jpg"alt="">
+                    </div>
+                    <div class="result-content">
+                        <h4>name</h4>
+                        <p>Price:&#8377;799</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="nav-icons">
+            <div class="cart-icon">
+                <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <span id="quantity">0</span>
+            </div>
+            <i class="fas fa-user"></i>
+        </div>
+    </nav>
+</header>
+<!-- ==================================================================================================
+                                   cart Section 
+================================================================================================== -->
+<section class="cart">
+    <div class="empty-cart"></div>
+    <div class="cart-container">
+
+        <div class="left-cart" id="cart-left">
+            <!-- <div class="cart-box">
+                <div class="cart-img">
+                    <img src="./images/p1.jpg" alt="">
+                </div>
+                <div class="cart-content">
+                    <h4>name</h4>
+                    <div class="cart-price">
+                        <p>Price: &#8377;799 <span>&#8377;999</span></p>
+                        <p>Total: &#8377;799</p>
+                    </div>
+                    <i class="fas fa-minus"></i>
+                    <span>0</span>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="remove">
+                    <button class="remove-item btn">Remove</button>
+                </div>
+            </div> -->
+          
+        </div>
+
+
+        <div class="right-cart">
+            <div class="total-details">
+                <h3>Price Details</h3>
+                <p>Total Amount: <span class="total-amount">&#8377;999</span></p>
+            </div>
+            <button onclick="placeOrder()" class="btn">Place Order</button>
+        </div>
+        <button onclick="clearCart()" class="clear-btn btn">Clear Cart</button>
+    </div>
+</section>
+
+
+<!-- ==================================================================================================
+                                  footer Section 
+================================================================================================== -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-box">
+            <h4>About</h4>
+            <ul>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="./index.html">Home</a></li>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="#">About</a></li>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h4>Help</h4>
+            <ul>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="./index.html">Privacy Policy</a></li>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="#">My account</a></li>
+                <li><i class="fa-solid fa-arrow-right"></i><a href="./cart.html">Cart</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h4>Have A Question?</h4>
+            <address>
+                    <p>
+                      <i class="fa-solid fa-location-dot"></i> Pilani Rajasthan
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-phone"></i> <a href="tel:+917689897722">+91 7689897722</a>
+                    </p>
+                    <p>
+                       <i class="fa-solid fa-envelope"></i> <a href="mailto:sadavarshsaini1@gmail.com">sadavarshsaini1@gmail.com</a>
+                    </p>
+            </address>
+        </div>
+    </div>
+    <div class="footer-cradit">
+        <p>Copyright@2021 | All Right Reserved </p>
+    </div>
+</footer>
+<script src="./js/products.js"></script>
+<script src="./js/cart.js"></script>
+
+
+</body>
+</html>

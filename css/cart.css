@@ -1,0 +1,151 @@
+.cart {
+    margin: 10rem 3vw;
+    position: relative;
+}
+
+.empty-cart {
+    text-align: center;
+}
+.empty-cart h2 {
+    font-size: 2rem;
+    color: #e40046;
+    text-transform: uppercase;
+}
+.empty-cart .btn {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.cart-container {
+    display: flex;
+    gap: 3rem;
+}
+/* ==================================================================================================
+                                         left cart 
+================================================================================================== */
+.left-cart {
+    flex: 1 1 60%;
+    border: .1rem solid #eee;
+    min-height: 150px;
+}
+.cart-box {
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem;
+    position: relative;
+    margin-bottom: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.cart-img img {
+    margin-top: 1rem;
+    width: 80px;
+    height: 80px;
+}
+.cart-content h4 {
+    font-size: 2rem;
+    color: #e40046;
+    margin-bottom: 0.5rem;
+}
+.cart-price {
+    display: flex;
+    gap: 2rem;
+}
+.cart-price p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.cart-price p span {
+    font-size: 1.3rem;
+  color: #e40046;
+  text-decoration: line-through;
+  padding-left: 0.5rem;
+}
+
+.cart-content i {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    background-color: #383838;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cart-content span {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+}
+
+
+
+.remove {
+    position: absolute;
+    bottom: .5rem;
+    right: 1rem;
+}
+/* ==================================================================================================
+                                         right cart 
+================================================================================================== */
+.right-cart {
+    flex: 1 1 40%;
+    border: .1rem solid #eee;
+    position: relative;
+    max-height: 200px;
+}
+
+.total-details h3 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.total-details p {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.right-cart .btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.cart .clear-btn {
+    position: absolute;
+    bottom: -3rem;
+}
+/* ==================================================================================================
+                                         media queries
+================================================================================================== */
+
+@media (max-width:991px ) {
+    .cart-container {
+        flex-wrap: wrap;
+    }
+    .remove {
+       bottom: -1.5rem;
+       right: 1rem;
+    }
+    .right-cart {
+        padding-bottom: 2rem;
+    }
+    .right-cart .btn {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+
+@media (max-width:768px ) {
+ 
+}
+
+@media (max-width:480px ) {
+
+
+   
+}

@@ -1,0 +1,82 @@
+
+.single-product {
+    margin-top: 7rem;
+}
+
+.single-product .product-container {
+    display: flex;
+    gap: 5rem;
+}
+.single-product .product-container .product-img  {
+    flex: 1 1 40%;
+}
+.single-product .product-container .product-img img {
+width: 100%;
+height: 500px;
+}
+
+.single-product .product-container .product-content  {
+    flex: 1 1 60%;
+
+}
+
+.single-product .product-container .product-content h3,
+.single-product .product-container .product-content p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.single-product .product-container .product-content .product-quantity i {
+    font-size: 2rem;
+    background-color: #383838;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.single-product .product-container .product-content .product-quantity span {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+}
+
+
+.single-product .product-container .product-content .add-to-cart {
+    margin: 2rem 0;
+    padding: 0.5em 0;
+}
+
+.select-size p {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.size-radio-btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+    border: .1rem solid #383838;
+    border-radius: 50%;
+    margin: 1rem;
+    margin-left: 0;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #383838;
+    cursor: pointer;
+}
+
+.size-radio-btn.check {
+    background-color: #383838;
+    color: #fff;
+}
+
+.single-product .product-desc h4 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+.single-product .product-desc p {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    text-align: justify;
+}
